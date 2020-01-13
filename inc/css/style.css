@@ -1,0 +1,91 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	min-height:100%;
+	display:flex; 
+	flex-direction:column;
+}
+.body{
+	left:16%;
+	margin-left: 16%;
+	margin-top: 70px;
+	margin-bottom: 5px;
+	width:83%;
+}
+.login{
+	margin-top: 30%;
+	text-align: center;
+}
+.table{
+	width:100%;
+	border-color: black;
+}
+.table th{
+	text-align: center;
+}
+.table th, .table td{
+	padding:5px;
+	border-color: black;
+}
+.login td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.signup{
+	margin-top: 20%;
+	text-align: center;
+}
+.signup td{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.foot{
+	color:rgba(255,255,255,.5);
+	margin-top:auto;
+}
+.leftpanel{
+	top:56px;
+	width:15%;
+	height:92%;
+	position:fixed;
+	float:none;
+	background: #999999;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.leftpanel a,.leftpanel a:visited{
+	margin-top:5px;
+	color:#e6e6e6;
+	background: #666666;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	width: 99%;
+	padding:5px;
+}
+.leftpanel a:hover,.leftpanel a:active{
+	background: #8c8c8c;
+}
+.statistik{
+	width:14.2%;
+	border:1px solid;
+	border-color: #000;
+	margin-left: 2px;
+	bottom:45px;
+	position: fixed;
+	padding:5px;
+}
+.statistik th{
+	border:1px solid;
+	border-color: black;
+	text-align: center;
+}
+.statistik td{
+	font-size:12px;
+}

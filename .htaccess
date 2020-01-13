@@ -1,0 +1,13 @@
+php_value short_open_tag 1
+php_value date.timezone 'Asia/Jakarta'
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
+	RewriteRule ^(.*)$ - [E=BASE:%1]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^([a-zA-Z0-9-]+)\.html?$ %{ENV:BASE}/index.php?page=$1 [QSA,L]
+</IfModule>
